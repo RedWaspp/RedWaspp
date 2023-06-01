@@ -1,0 +1,26 @@
+{
+  "dev-gcp" : {
+    "appHostSuffix": "-dev",
+    "springCloudConfigProfiles": "dev,cloud",
+    "appInstances": 1,
+    "splunkSyslogDrain": ""
+  },
+  "qa-gcp" : {
+    "appHostSuffix": "-qa",
+    "springCloudConfigProfiles": "qa,cloud",
+    "appInstances": 1,
+    "splunkSyslogDrain": ""
+  },
+  "prod-val-gcp": {
+    "appHostSuffix": "-prod-val",
+    "springCloudConfigProfiles": "prod-val,cloud",
+    "appInstances": 1,
+    "splunkSyslogDrain": ""
+  },
+  "prod-gcp" : {
+    "appHostSuffix": "",
+    "springCloudConfigProfiles": "prod,cloud",
+    "appInstances": 1,
+    "splunkSyslogDrain": ""
+  }
+}

@@ -1,0 +1,2 @@
+spring.application.name: cvas-evap-purge-service
+spring.database.name: cvas-evap-purge-service

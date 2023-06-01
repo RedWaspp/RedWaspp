@@ -1,0 +1,15 @@
+---
+applications:
+- name: cvas-evap-purge-service${appHostSuffix}
+  path: ${build.artifactPath}
+  buildpacks:
+  - java_buildpack_offline
+  memory: 1G
+  instances: ${appInstances}
+  services:
+    - cvas-evappurge-services-mssql-credhub
+#    - canary-db
+    ${splunkSyslogDrain}
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'    
+    SPRING_PROFILES_ACTIVE: ${springCloudConfigProfiles}

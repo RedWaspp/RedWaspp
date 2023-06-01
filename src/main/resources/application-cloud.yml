@@ -1,0 +1,7 @@
+spring:
+  datasource:
+      url: ${vcap.services.cvas-evappurge-services-mssql-credhub.credentials.url}
+      username: ${vcap.services.cvas-evappurge-services-mssql-credhub.credentials.username}
+      password: ${vcap.services.cvas-evappurge-services-mssql-credhub.credentials.password}
+
+

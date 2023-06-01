@@ -1,0 +1,8 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://corp.sts.ford.com/adfs/services/trust
+          audience-id: urn:cvas_evappurge_service:resource:gcp:api_cvasevapservice001:prod_val
+
